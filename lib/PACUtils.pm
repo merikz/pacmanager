@@ -105,7 +105,7 @@ require Exporter;
 ###################################################################
 # Define GLOBAL CLASS variables
 
-our $APPNAME		= 'PAC';
+our $APPNAME		= 'PAC-'.`git status  | sed -ne'/^On branch /{s/^On branch \\(.*\\)/\\1/;p;q}'|tr -d "\n"`;
 our $APPVERSION		= '4.5.5.8';
 our $DEBUG_LEVEL	= 1;
 our $ARCH			= '';
