@@ -50,7 +50,6 @@ use PACPCC;
 my $APPNAME			= $PACUtils::APPNAME;
 my $APPVERSION		= $PACUtils::APPVERSION;
 
-my $CFG_DIR			= $ENV{'HOME'} . '/.config/pac';
 my $CLUSTERS_FILE	= $CFG_DIR . '/pac_clusters.nfreeze';
 my $GROUPICONCLOSED	= _pixBufFromFile( $RealBin . '/res/pac_group_closed_16x16.png' );
 my $GROUPICON_ROOT	= _pixBufFromFile( $RealBin . '/res/pac_group.png' );

@@ -63,7 +63,9 @@ use PACStatistics;
 use PACTree;
 use PACPipe;
 use PACScripts;
-
+require Exporter;
+our @ISA        = qw( Exporter );
+our @EXPORT     = qw( $CFG_DIR );
 # END: Import Modules
 ###################################################################
 
@@ -79,7 +81,6 @@ my $RES_DIR			= $RealBin . '/res';
 &_registerPACIcons;
 
 my $INIT_CFG_FILE		= $RealBin . '/res/pac.yml';
-my $CFG_DIR				= $ENV{'HOME'} . '/.config/pac';
 my $CFG_FILE			= $CFG_DIR . '/pac.yml';
 our $R_CFG_FILE			= '';
 my $CFG_FILE_FREEZE		= $CFG_DIR . '/pac.freeze';
@@ -151,7 +152,7 @@ sub new {
 	$$self{_GUILOCKED}			= 0;
 	
 	$self	-> {_APP}			= Gtk2::UniqueApp -> new(
-		'org.pacmanager.PAC', undef,
+		'org.pacmanager.'.$APPNAME, undef,
 		'start-shell'	=> 1,
 		'quick-conn'	=> 2,
 		'start-uuid'	=> 3,

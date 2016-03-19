@@ -48,7 +48,6 @@ use PACUtils;
 my $APPNAME		= $PACUtils::APPNAME;
 my $APPVERSION	= $PACUtils::APPVERSION;
 my $APPICON		= $RealBin . '/res/pac64x64.png';
-my $CFG_DIR		= $ENV{'HOME'} . '/.config/pac';
 my $STATS_FILE	= $CFG_DIR . '/pac_stats.nfreeze';
 
 # END: Define GLOBAL CLASS variables

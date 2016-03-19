@@ -56,7 +56,6 @@ use PACUtils;
 my $APPNAME		= $PACUtils::APPNAME;
 my $APPVERSION	= $PACUtils::APPVERSION;
 my $APPICON		= $RealBin . '/res/pac64x64.png';
-my $CFG_DIR		= $ENV{'HOME'} . '/.config/pac';
 
 my $PERL_BIN	= '/usr/bin/perl';
 my $PAC_CONN	= $RealBin . '/lib/pac_conn';

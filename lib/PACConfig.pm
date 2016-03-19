@@ -57,7 +57,6 @@ my $APPVERSION		= $PACUtils::APPVERSION;
 my $AUTOSTART_FILE	= $RealBin . '/res/pac_start.desktop';
 
 my $GLADE_FILE		= $RealBin . '/res/pac.glade';
-my $CFG_DIR			= $ENV{'HOME'} . '/.config/pac';
 my $RES_DIR			= $RealBin . '/res';
 
 # Connect to Gnome's GConf

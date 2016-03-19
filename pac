@@ -67,7 +67,6 @@ use PACMain;
 ###################################################################
 # START: Define GLOBAL variables
 my $INIT_CFG_FILE	= $RealBin		. '/res/pac.yml';
-my $CFG_DIR			= $ENV{'HOME'}	. '/.config/pac';
 my $OLD_CFG_DIR		= $ENV{'HOME'}	. '/.pac';
 my $CFG_FILE		= $CFG_DIR		. '/pac.cfg';
 

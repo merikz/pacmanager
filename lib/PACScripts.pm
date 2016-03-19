@@ -54,7 +54,6 @@ my $APPNAME			= $PACUtils::APPNAME;
 my $APPVERSION		= $PACUtils::APPVERSION;
 my $APPICON			= $RealBin . '/res/pac64x64.png';
 my $BANNER			= $RealBin . '/res/pac_banner_scripts.png';
-my $CFG_DIR			= $ENV{'HOME'} . '/.config/pac';
 my $SCRIPTS_DIR		= $CFG_DIR . '/scripts';
 
 # PAC Help

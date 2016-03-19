@@ -94,6 +94,7 @@ require Exporter;
 	_getEncodings
 	_findKP
 	_makeDesktopFile
+	$CFG_DIR
 ); # Functions/varibles to export
 
 @EXPORT_OK  = qw();
@@ -116,7 +117,7 @@ elsif	( $ARCH_TMP =~ /arm/gio )		{ $ARCH = 'ARM'; }
 else									{ $ARCH = 32; }
 my $RES_DIR			= $RealBin . '/res';
 my $SPLASH_IMG		= $RES_DIR . '/pac256x256.jpg';
-my $CFG_DIR			= $ENV{'HOME'} . '/.config/pac';
+our $CFG_DIR			= $ENV{'HOME'} . '/.config/'.lc($APPNAME);
 my $CFG_FILE		= $CFG_DIR . '/pac.yml';
 my $R_CFG_FILE		= $PACMain::R_CFG_FILE;
 my $CIPHER			= Crypt::CBC -> new( -key => 'PAC Manager (David Torrejon Vaquerizas, david.tv@gmail.com)', -cipher => 'Blowfish', -salt => '12345678' ) or die "ERROR: $!";

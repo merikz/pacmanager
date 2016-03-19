@@ -63,7 +63,6 @@ my $AUTOSTART_FILE	= $RES_DIR . '/pac_start.desktop';
 
 my $GLADE_FILE		= $RES_DIR . '/pac.glade';
 my $INIT_CFG_FILE	= $RES_DIR . '/pac.yml';
-my $CFG_DIR			= $ENV{'HOME'} . '/.config/pac';
 my $CFG_FILE		= $CFG_DIR . '/pac.yml';
 
 my $GCONF			= Gnome2::GConf::Client -> get_default;
